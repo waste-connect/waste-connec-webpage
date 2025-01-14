@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <title>Waste Connect | Trash Pickup Services</title>
+</head>
+<body>
+    <div class="flex flex-col gap-6">
+        <div class="nav-container flex justify-between p-6 items-center ">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">waste coonect</a>
+                </h1>
+
+            </div>
+           <div class="flex justify-center items-center gap-4">
+            <div>
+                <button class="bg-green-600 text-white rounded-lg px-3 p-1">service</button>
+
+            </div>
+            <div class="mobile nav">
+                <div class="w-8">
+                    <svg class="toggle" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850 850" width="850" height="850" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_5"><rect width="850" height="850" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_5)"><g transform="matrix(1,0,0,1,425,425)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(0,65,108)" stroke-opacity="1" stroke-width="60" d=" M324,-250 C324,-250 3,-250 3,-250 C3,-250 -324,-250 -324,-250"></path></g></g><g transform="matrix(1,0,0,1,425,425)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(0,65,108)" stroke-opacity="1" stroke-width="60" d=" M-324,250 C-324,250 3,250 3,250 C3,250 324,250 324,250"></path></g></g><g transform="matrix(1,0,0,1,425,425)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(0,65,108)" stroke-opacity="1" stroke-width="60" d=" M-324,0 C-324,0 324,0 324,0"></path></g></g></g></svg>
+                    <div class="navbar">
+                        <div class="menu" id="menu">
+                            <a href="#home">services</a>
+                            <a href="#about">commercial</a>
+                            <a href="residential.html">residential</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+           </div>
+            
+        </div>
+        <main class="hero mt-10 justify-between flex flex-col items-center p-4 gap-14">
+           <div class="flex justify-center flex-col gap-3">
+            <h4>Waste connection</h4>
+            <h1>Waste connections Garbage Pickup</h1>
+            <p>Home and business waste management services and dumpster rentals.</p>
+            <div class="flex flex-col gap-3">
+                <a href="/start-services.html">
+                <button class="start">Start Services</button>
+                </a>
+                <a href="/start-services.html">
+                <button class="quote">Request Quote</button>
+                </a>
+            </div>
+           </div>
+           <div>
+            <img src="images/65778a175057c88e9e4f43d9_Landfill_Hero_4.jpg" alt="">
+           </div>
+
+        </main>
+        <div id="serviceCardsContainer" class="flex flex-col gap-8 justify-center items-center p-4">
+            <!-- <div class="service-box p-4 ">
+                <div class="flex flex-col gap-4">
+                    <img class="w-20" src="/images/green residential dumpster.png" alt="">
+                    <div class="flex gap-18 item-center">
+                        <h2 class="font-medium text-3xl text-green-600">Garbage Pickup for home</h2>
+                        <img src="/svg" alt="">
+                    </div>
+                    <p>Residential Recycling is available in many areas where we offer garbage pickup.</p>
+                </div>
+            </div> -->
+        </div>
+        <section class="p-4 pt-10">
+            <div>
+               <div class="flex flex-col justify-center items-center">
+                <h2 class="comm text-[#1f528f] text-2xl font-medium">Our Commercial Services</h2>
+                <p class="text-center text-lg">Waste Connections provides your business with a range of container sizes and scheduling service
+                    &nbsp;options designed to meet your specific waste collection needs. Contact us today and ask how we can
+                    help you effectively manage your waste.</p>
+               </div>
+               <img src="/images/garbage truck.jpg" alt="">
+            </div>
+            <div class="pt-5">
+                <div class="flex flex-col justify-center items-center">
+                 <h2 class="resi text-[#1f528f] text-2xl font-medium">Our Residential Services</h2>
+                 <p class="text-center text-lg">Waste Connections ensures timely trash pickup and consistent service. Residential recycling service
+                    is also available in many of the areas we provide garbage collection. Contact us today and ask about
+                    how we can help you effectively manage your waste.</p>
+                </div>
+                <img src="/images/Trash Can .jpg" alt="">
+             </div>
+        </section>
+        <footer class="text-white p-6 mt-10">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold">Waste Connections</h2>
+                    <p class="mt-2">Your trusted partner in waste management.</p>
+                    <p class="mt-2">Contact us: (123) 456-7890</p>
+                    <p>Email: <a href="mailto:info@wasteconnections.com" class="text-blue-400">info@wasteconnections.com</a></p>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold">Services</h3>
+                    <ul class="mt-2">
+                        <li><a href="/residential-services" class="hover:text-blue-400">Residential Services</a></li>
+                        <li><a href="/commercial-services" class="hover:text-blue-400">Commercial Services</a></li>
+                        <li><a href="/dumpster-rental" class="hover:text-blue-400">Dumpster Rental</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold">Follow Us</h3>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="hover:text-blue-400"><img src="/images/facebook-icon.png" alt="Facebook" class="w-6 h-6"></a>
+                        <a href="#" class="hover:text-blue-400"><img src="/images/twitter-icon.png" alt="Twitter" class="w-6 h-6"></a>
+                        <a href="#" class="hover:text-blue-400"><img src="/images/instagram-icon.png" alt="Instagram" class="w-6 h-6"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <p>&copy; 2024 Waste Connections. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+          
+          function toggleMenu() {
+            const menu = document.getElementById('menu');
+            if (menu.classList.contains('show')) {
+                menu.classList.remove('show');
+                setTimeout(() => {
+                    menu.style.display = 'none'; // Hide after transition
+                }, 500); // Match timeout with the CSS transition duration
+            } else {
+                menu.style.display = 'flex'; // Make it flex before adding class
+                setTimeout(() => {
+                    menu.classList.add('show');
+                }, 10); // Small timeout to allow the display property to take effect
+            }
+        }
+
+        // Close the menu when clicking outside
+        window.onclick = function(event) {
+            const menu = document.getElementById('menu');
+            if (!event.target.matches('.toggle') && menu.classList.contains('show')) {
+                menu.classList.remove('show');
+                setTimeout(() => {
+                    menu.style.display = 'none'; // Hide after transition
+                }, 500); // Match timeout with the CSS transition duration
+            }
+        };
+    </script>
+    
+</body>
+</html>

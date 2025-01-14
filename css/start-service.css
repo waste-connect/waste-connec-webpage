@@ -1,0 +1,68 @@
+
+
+@media screen and (max-width: 400px) {
+    
+    .bxs-location-plus {
+        color: #00416d;
+        position: absolute;
+        margin-top: 13px;
+        margin-left: 8PX;
+    }
+    .bxs-user {
+        color: #00416d;
+        position: absolute;
+        margin-top: 13px;
+        margin-left: 8PX;
+
+    }
+    .bxs-envelope {
+        color: #00416d;
+        position: absolute;
+        margin-top: 13px;
+        margin-left: 8PX;
+    }
+    .bxs-phone {
+        color: #00416d;
+        position: absolute;
+        margin-top: 13px;
+        margin-left: 8PX;
+    }
+
+    i {
+        font-size: 22px;
+    }
+
+    .svg-color {
+        fill: #fff !important;
+    }
+
+    .service-checkbox {
+        display: none; /* Hide the default checkbox */
+    }
+    
+    .custom-checkbox {
+        background-color: white; /* White background for the checkbox */
+        position: relative; /* Positioning for the checkmark */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+    
+    .custom-checkbox:hover {
+        border-color: grey; /* Change border color on hover */
+    }
+    
+    .service-checkbox:checked + .custom-checkbox .checkmark {
+        display: block; /* Show the checkmark when checked */
+    }
+    
+    .checkmark {
+        display: none; /* Hide the checkmark by default */
+        position: absolute; /* Position the checkmark */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Center the checkmark */
+    }
+    
+   
+
+
+}

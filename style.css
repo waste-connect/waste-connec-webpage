@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", serif;
+}
+
+@media screen and (max-width: 400px) {
+    .nav-container {
+        width: 100%;
+        /* position: fixed; */
+        z-index: 9999;
+        /* border-bottom: 1px solid rgb(209, 203, 203); */
+        box-shadow: 2px 1px 1px 1px rgb(211, 210, 210);
+        background-color: #fff;
+        
+    }
+
+    .navbar {
+        
+        position: relative;
+      
+    }
+    .navbar .toggle {
+        /* background-color: #333; */
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 2px;
+
+    }
+    .navbar .menu {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        background-color: #333;
+        max-height: 0; /* Set initial height to 0 for transition */
+        overflow: hidden;
+        transition: max-height 0.5s ease; /* Smooth transition */
+        position: absolute; /* Position the menu absolutely */
+        top: 100%; /* Position it below the navbar */
+        left: 0; /* Align to the left */
+        right: 0; /* Align to the right */
+        z-index: 10; /* Ensure it appears above other content */
+        width: 360px;
+        margin-left: -311px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+      
+        
+    }
+    .navbar .menu.show {
+        display: flex; /* Show flex when active */
+        max-height: 300px; /* Adjust according to content */
+    }
+    .navbar .menu a {
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid #444;
+    }
+   
+        
+    h4 {
+        color: #1f528f;
+    }
+
+    .hero {
+        background-attachment: scroll;
+    }
+    .hero h1 {
+        color: #1f528f;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+
+    .start {
+        background-color: #018630;
+        color: #fff;
+        width: 100%;
+        border-radius: 8px;
+        font-weight: 500;
+        height: 40px;
+    }
+
+    .quote {
+        color: #1f528f;
+        width: 100%;
+        border-radius: 8px;
+        font-weight: 500;
+        height: 40px;
+        border: 1px solid #1f528f;
+        background-color: #fff;
+    }
+    .quote:hover {
+        background-color: #1f528f;
+        border: none;
+        color: #fff;
+    }
+
+    .service-box {
+        /* width: 350px; */
+        /* height: 300px; */
+        border-radius: 8px;
+        box-shadow: 1px 2px 2px 1px #bbb9b9;
+        /* border: 1px solid rgb(149, 144, 144); */
+        /* padding-left: 20px; */
+        /* padding-top: 10px; */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+    }
+
+    .service-box.green:hover {
+        border: 2px solid #018630;
+        box-shadow: none;
+    }
+    
+    .service-box.blue:hover {
+        border: 2px solid #1f528f;
+        box-shadow: none;
+    }
+    
+    .service-box.black:hover {
+        border: 2px solid #000000;
+        box-shadow: none;
+    }
+    
+    .title-green {
+        color: #018630;
+    }
+    
+    .title-blue {
+        color: #1f528f;
+    }
+    
+    .title-black {
+        color: #000000;
+    }
+
+    .comm {
+        color: #018630;
+    }
+
+    .res {
+        color: #1f528f;
+    }
+
+    footer {
+        background-color: #00416d; /* Dark gray background */
+    }
+    
+    footer a {
+        color: #ffffff; /* White text for links */
+        transition: color 0.3s ease; /* Smooth transition for hover effect */
+    }
+    
+    footer a:hover {
+        color: #63b3ed; /* Light blue on hover */
+    }
+    
+    footer h2, footer h3 {
+        margin-bottom: 0.5rem; /* Space below headings */
+    }
+    
+    footer p {
+        margin-bottom: 0.5rem; /* Space below paragraphs */
+    }
+
+    .green-svg {
+        fill: #175e45 !important;
+    }
+    
+    .blue-svg {
+        fill: #1f528f !important;
+    }
+
+  
+    
+}
