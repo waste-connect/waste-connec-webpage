@@ -8,6 +8,77 @@
     font-family: "Inter", serif;
 }
 
+
+.mobile{
+    display: none;
+}
+
+ul li{
+    transition: all ;
+    padding: 6px 16px;
+}
+
+ul li:hover{
+    background: rgba(0, 0, 0, 0.047);
+    border-radius: 10px;
+}
+
+.hero h1{
+    color: #3b3b3b;
+    font-size: 14px;
+}
+
+.hero-action button{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero-action .start{
+    background: #018630;
+}
+
+.hero-action .quote{
+    background: #1f528f;
+}
+
+.hero_image{
+    width: 50%;
+}
+
+.service-box {
+    width: 90%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.service-box:hover{
+    background: #00000090;
+    box-shadow: 10px 10px 5px 1px #00000034;
+    color:white;
+    scale: 1.05;
+}
+
+/* Targeting the SVG directly */
+.svg {
+    width: 15px;        /* Change width */
+    height: 14px;     /* Change the color of the whole SVG */
+    transition: transform 0.3s ease;  
+    margin-left: auto;
+  }
+
+  .svg path{
+    fill: rgb(0, 0, 0);
+  }
+  
+  .service-box:hover .svg path {
+    fill: white;
+  }
+  
 @media screen and (max-width: 400px) {
     .nav-container {
         width: 100%;
@@ -62,7 +133,10 @@
         color: white;
         border-bottom: 1px solid #444;
     }
-   
+
+    .mobile{
+        display: block;
+    }
         
     h4 {
         color: #1f528f;
@@ -76,6 +150,10 @@
         font-size: 36px;
         font-weight: 700;
         line-height: 39px;
+    }
+
+    .hero_image{
+        width: 100%;
     }
 
     .start {
@@ -103,7 +181,7 @@
     }
 
     .service-box {
-        /* width: 350px; */
+        width: 95%;
         /* height: 300px; */
         border-radius: 8px;
         box-shadow: 1px 2px 2px 1px #bbb9b9;
@@ -178,7 +256,5 @@
     .blue-svg {
         fill: #1f528f !important;
     }
-
-  
     
 }
