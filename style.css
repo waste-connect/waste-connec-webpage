@@ -6,6 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Inter", serif;
+    /* transition: all 0.2s ease-in-out; */
 }
 
 
@@ -14,7 +15,6 @@
 }
 
 ul li{
-    transition: all ;
     padding: 6px 16px;
 }
 
@@ -37,10 +37,19 @@ ul li:hover{
 
 .hero-action .start{
     background: #018630;
+
 }
 
 .hero-action .quote{
     background: #1f528f;
+}
+
+.hero-action .start:hover{
+    background: #175e45;
+}
+
+.hero-action .quote:hover{
+    background: #00416d;
 }
 
 .hero_image{
@@ -50,9 +59,9 @@ ul li:hover{
 .service-box {
     width: 90%;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease !important;
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     
 }
 
@@ -78,7 +87,19 @@ ul li:hover{
   .service-box:hover .svg path {
     fill: white;
   }
-  
+
+  .login_img{
+    background: url(/images/picking\ up.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 50%;
+    background-size: cover;
+  }
+
+  .login_form input:focus{
+outline: 1px solid #018630;
+  }
+
 @media screen and (max-width: 400px) {
     .nav-container {
         width: 100%;
@@ -189,7 +210,7 @@ ul li:hover{
         /* padding-left: 20px; */
         /* padding-top: 10px; */
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.3s ease !important;
         
     }
 
@@ -256,5 +277,11 @@ ul li:hover{
     .blue-svg {
         fill: #1f528f !important;
     }
+    .login_img{
+        display: none;
+    }
     
+    .login_form{
+        width: 90vw;
+    }
 }

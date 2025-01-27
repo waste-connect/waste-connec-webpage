@@ -14,30 +14,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header"></div>
-    <header class="flex justify-between items-center p-4 bg-white shadow">
-        <div class="flex items-center">
-            <span class="ml-2 text-xl font-bold">Waste Connect</span>
-        </div>
-        <div class="flex items-center">
-            <select class="border rounded p-1">
-                <option>EN</option>
-                <option>ES</option>
-            </select>
-            
-        </div>
-    </header>
-    <main class="flex flex-col items-center p-2 mt-10">
-        <form action="">
-            <label for="address" class="block text-gray-700 mb-2">Email</label>
-            <input type="text" id="phone" placeholder="example@gmail.com" class="border pl-4 rounded w-full p-2" />
-            <label for="address" class="block text-gray-700 mb-2">Password</label>
-            <input type="text" id="password" placeholder="e.g. password" class="border pl-4 rounded w-full p-2" />
-            <button class="bg-green-600 w-full mt-4 text-white rounded-lg px-3 p-1">Login</button>
-        </form>
-    </main>
+    
+    <main class="flex flex-col md:flex-row md:items-center p-2 md:p-0 mt-10 md:mt-0">
+        <div class="login_img"></div>
+        <div class="flex flex-1 flex-col justify-start items-center">
+            <div class="mb-10">
+                <img src="/images/waste-connect-logo2.jpeg" style="height: 70px;" class="h-[50px] w-[50px]" alt="">
+            </div>
+           <form action="" class="login_form md:w-2/3  flex gap-4 flex-col">
+            <div>
+                <label for="address" class="block text-gray-700 mb-2">Email</label>
+                <input type="text" id="phone" placeholder="example@gmail.com" class="border pl-4 rounded w-full p-4" />
+                
+            </div>
 
-    <div id="footer"></div>
+            <div>
+                <label for="address" class="block text-gray-700 mb-2">Password</label>
+                <input type="text" id="password" placeholder="e.g. password" class="border pl-4 rounded w-full p-4" />    
+            </div>
+           <button class="bg-green-600 w-full mt-4 text-white rounded-lg p-4">Login</button>
+        </form>  
+        </div>
+
+    </main>
 
     <script>
         // Function to load HTML content
