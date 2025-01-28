@@ -4,21 +4,29 @@ const services = [
         title: "Garbage Pickup for home",
         description: "Residential Recycling is available in many areas where we offer garbage pickup.",
         colorClass: "green",
-         link: "/residential-services"
+        link: "/residential-services"
     },
     {
         image: "/images/commercial dumpster.png",
         title: "Commercial Services",
         description: "Our Commercial Waste Collection service provides your business with a range of dumpsters and service schedules to meet your needs.",
         colorClass: "blue",
-         link: "/commercial-services",
-         Style: 'display'
+        link: "/commercial-services",
+        Style: 'display'
     },
-    
+
     {
         image: "/images/roll off dumpster.png",
         title: "Dumpster Rental",
         description: "Our Roll Off Dumpster services offer a range of container sizes suitable for commercial, residential, and construction needs.",
+        colorClass: "black",
+        link: "/dumpster-rental"
+    },
+
+    {
+        image: "/images/security_icon.png",
+        title: "Dumpster Rental",
+        description: "Our Roll Off Dumpster services offer a range of container.",
         colorClass: "black",
         link: "/dumpster-rental"
     }
@@ -33,7 +41,7 @@ services.forEach(service => {
     serviceCard.innerHTML = `
         <div class="p-4">
             <div class="flex flex-col gap-4">
-                <img class="w-20" src="${service.image}" alt="${service.title}">
+                <img class="w-20" style="width: 80px;" src="${service.image}" alt="${service.title}">
                 <div class="flex gap-4 items-center">
                     <h2 class="font-medium text-3xl title-${service.colorClass}">${service.title}</h2>
                
@@ -51,7 +59,7 @@ services.forEach(service => {
 
 
 
-  
+
 function toggleMenu() {
     const menu = document.getElementById('menu');
     if (menu.classList.contains('show')) {
@@ -68,7 +76,7 @@ function toggleMenu() {
 }
 
 // Close the menu when clicking outside
-window.onclick = function(event) {
+window.onclick = function (event) {
     const menu = document.getElementById('menu');
     if (!event.target.matches('.toggle') && menu.classList.contains('show')) {
         menu.classList.remove('show');

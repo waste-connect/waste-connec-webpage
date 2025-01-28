@@ -13,7 +13,7 @@
     <title>Waste Connect | Trash Pickup Services</title>
 </head>
 <body>
-    <div class="flex flex-col gap-6">
+    <div class=" relative flex flex-col gap-6">
         <nav class="nav-container flex justify-between md:gap-20 p-4 md:py-6 md:px-20 items-center ">
             <div class="logo">
                 <h1>
@@ -22,9 +22,9 @@
                     </a>
                 </h1>
             </div>
-           <div class="flex md:w-2/3 md:justify-between items-center">
+           <div class="flex md:w-2/3 justify-end md:gap-16 items-center">
 
-            <ul class="md:flex flex-1 hidden gap-20">
+            <ul class="md:flex hidden gap-16">
                 <a href="">
                    <li>
                     services
@@ -44,8 +44,9 @@
 
             </ul>
 
-            <div>
-                <button class="bg-green-600 text-white rounded-lg px-3 p-2 nav_button">service</button>
+            <div class="border border-color-[#018630] rounded-2xl p-1">
+                <button class="text-[#018630] rounded-2xl px-3 p-2 hover:bg-zinc-200">Log in</button>
+                <button class="bg-green-600 text-white rounded-xl px-3 p-2 nav_button">sign up</button>
             </div>
             <div class="mobile nav">
                 <div class="w-8">
@@ -71,10 +72,7 @@
             <p>Home and business waste management services and dumpster rentals.</p>
             <div class="flex flex-col md:flex-row gap-3 hero-action mt-8">
                 <a href="/start-services.html">
-                <button class="start">Start Services</button>
-                </a>
-                <a href="/start-services.html">
-                <button class="quote ">Request Quote</button>
+                <button class="start ">Start Services</button>
                 </a>
             </div>
            </div>
@@ -83,35 +81,34 @@
            </div>
 
         </main>
-        <div id="serviceCardsContainer" class="flex flex-col gap-8 justify-center items-center">
-            <!-- <div class="service-box p-4 ">
-                <div class="flex flex-col gap-4">
-                    <img class="w-20" src="/images/green residential dumpster.png" alt="">
-                    <div class="flex gap-18 item-center">
-                        <h2 class="font-medium text-3xl text-green-600">Garbage Pickup for home</h2>
-                        <img src="/svg" alt="">
-                    </div>
-                    <p>Residential Recycling is available in many areas where we offer garbage pickup.</p>
-                </div>
-            </div> -->
-        </div>
+        <div id="serviceCardsContainer" class="flex flex-wrap gap-8 md:gap-10 justify-center items-center"></div>
         <section class="p-4 pt-10 md:px-20">
             <div class="md:flex md:flex-row  text-right">
-               <div class="flex flex-col justify-center items-center text-left">
-                <h2 class="comm text-[#1f528f] md:text-3xl text-xl font-medium">Our Commercial Services</h2>
+               <div class="flex flex-col justify-center items-start text-left">
+                <h2 class="comm text-[#1f528f] md:text-5xl text-xl font-medium">Our Commercial Services</h2>
                 <p class="text-left text-sm mt-4">Waste Connections provides your business with a range of container sizes and scheduling service
                     &nbsp;options designed to meet your specific waste collection needs. Contact us today and ask how we can
                     help you effectively manage your waste.</p>
+
+                    <a href="/start-services.html" class="mt-8">
+                        <button class="start ">Start Services</button>
+                        </a>
                </div>
                <img src="/images/garbage truck.jpg" alt="">
             </div>
             
-            <div class="md:flex md:flex-row-reverse  text-right">
-                <div class="flex flex-col justify-center items-center text-right">
+            <div class="md:flex md:flex-row-reverse  text-left">
+                <div class="flex flex-col justify-center text-left">
                  <h2 class="comm text-[#1f528f] md:text-3xl text-xl font-medium">Our Residential Services</h2>
-                 <p class="text-right text-sm mt-4">Waste Connections ensures timely trash pickup and consistent service. Residential recycling service
+                 <p class="text-left text-sm mt-4">Waste Connections ensures timely trash pickup and consistent service. Residential recycling service
                     is also available in many of the areas we provide garbage collection. Contact us today and ask about
                     how we can help you effectively manage your waste</p>
+                
+
+                    <a href="/start-services.html" class="mt-8">
+                        <button class="start ">Start Services</button>
+                        </a>
+
                 </div>
                 <img src="/images/Trash Can .jpg" alt="">
              </div>

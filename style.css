@@ -6,15 +6,31 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Inter", serif;
-    transition: all 0.4s ease-in-out !important;
+    /* transition: all 0.4s ease-in-out !important; */
 }
 
 .mobile{
     display: none;
 }
 
+nav{
+    position: fixed;
+    background: white;
+    width: 100vw;
+}
+
+.nav_button{
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_button:hover{
+    background-color: #175e45;
+}
+
 ul li{
     padding: 6px 16px;
+    transition: all 0.3s ease-in-out;
+
 }
 
 ul li:hover{
@@ -22,20 +38,28 @@ ul li:hover{
     border-radius: 10px;
 }
 
+.hero{
+    height: 100vh;
+}
+
 .hero h1{
     color: #3b3b3b;
     font-size: 14px;
 }
 
-.hero-action button{
+section button{
     padding: 10px 16px;
     border: none;
     border-radius: 10px;
     color: white;
 }
 
-.hero-action .start{
+.start{
     background: #018630;
+    padding: 10px 60px;
+    color: white;
+    border-radius: 10px;
+
 
 }
 
@@ -56,19 +80,20 @@ ul li:hover{
 }
 
 .service-box {
-    width: 90%;
+    width: 41%;
     cursor: pointer;
-    /* transition: color 0.3s ease !important; */
+    transition: all 0.3s ease-in-out !important;
     border-radius: 20px;
     padding: 10px;
+    background: #00000014;
     
 }
 
 .service-box:hover{
     background: #00000090;
-    box-shadow: 10px 10px 5px 1px #00000034;
+    box-shadow: 10px 10px 10px 1px #00000034;
     color:white;
-    scale: 1.05;
+    scale: 1.03;
 }
 
 /* Targeting the SVG directly */
@@ -99,7 +124,17 @@ ul li:hover{
 outline: 1px solid #018630;
   }
 
-  
+  footer{
+   background: #00416d;
+   display: flex;
+   gap: 20px;
+   color: white;
+   padding: 80px !important;
+  }
+
+  footer a{
+    color: white;
+  }
 
 @media screen and (max-width: 400px) {
     .nav-container {
@@ -260,7 +295,7 @@ outline: 1px solid #018630;
     }
     
     footer a:hover {
-        color: #63b3ed; /* Light blue on hover */
+        scale: 1.05;
     }
     
     footer h2, footer h3 {
