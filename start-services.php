@@ -1,3 +1,6 @@
+<?php
+    include 'server/login_register.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +43,7 @@
                     </div>
                     <span class="text-2xl">For Your Home</span>
                 </div>
-                <input type="checkbox" name="service" class="service-checkbox hidden" />
+                <input type="checkbox" name="Service" class="service-checkbox hidden" />
                 <div class="custom-checkbox border-4 border-gray-200 w-8 h-8 flex items-center justify-center mr-2">
                 <svg class="checkmark hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
                  <polyline points="20 6 9 17 4 12" />
@@ -55,7 +58,7 @@
                     </div>
                     <span class="text-2xl">For Business & Organizations</span>
                 </div>
-                <input type="checkbox" name="service" class="service-checkbox hidden" />
+                <input type="checkbox" name="Service" class="service-checkbox hidden" />
                 <div class="custom-checkbox border-4 border-gray-200 w-10 h-8 flex items-center justify-center mr-2">
                 <svg class="checkmark hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
                  <polyline points="20 6 9 17 4 12" />
@@ -65,22 +68,22 @@
         </div>
 
         <div class="mt-6 w-full max-w-md">
-           <form action="">
+           <form method="POST">
             <label for="address" class="block text-gray-700 mb-2">Address</label>
             <i class='bx bxs-location-plus'></i>
-            <input  type="text" name="address" placeholder="e.g. 123 Main Street, NW, New York" class="border pl-8 rounded w-full p-2" />
+            <input  type="text" name="Address" placeholder="e.g. 123 Main Street, NW, New York" class="border pl-8 rounded w-full p-2" />
             <label for="address" class="block text-gray-700 mb-2">Name</label>
             <i class='bx bxs-user'></i>
             <input type="text" name="Name" placeholder="e.g. john doe" class="border pl-8 rounded w-full p-2" />
             <label for="address" class="block text-gray-700 mb-2">Email</label>
             <i class='bx bxs-envelope'></i>
-            <input type="text" name="email" placeholder="e.g. examle@gmail.com" class="border pl-8 rounded w-full p-2" />
+            <input type="text" name="Email" placeholder="e.g. examle@gmail.com" class="border pl-8 rounded w-full p-2" />
             <label for="address" class="block text-gray-700 mb-2">Phone</label>
             <i class='bx bxs-phone'></i>
-            <input type="text" name="phone" placeholder="e.g. +234" class="border pl-8 rounded w-full p-2" />
+            <input type="text" name="Phone" placeholder="e.g. +234" class="border pl-8 rounded w-full p-2" />
             <label for="address" class="block text-gray-700 mb-2">Password</label>
-            <input type="text" name="password" placeholder="e.g. password" class="border pl-8 rounded w-full p-2" />
-            <button class="bg-green-600 w-full mt-4 text-white rounded-lg px-3 p-1">Submit</button>
+            <input type="text" name="Password" placeholder="e.g. password" class="border pl-8 rounded w-full p-2" />
+            <button type="submit" name="Register" class="bg-green-600 w-full mt-4 text-white rounded-lg px-3 p-1">Submit</button>
            </form>
         </div>
     </main>
