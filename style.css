@@ -88,7 +88,7 @@ ul li:hover{
   }
 
   .login_img{
-    background: url(/images/picking\ up.jpeg);
+    background: url(./images/picking\ up.jpeg);
     height: 100vh;
     background-repeat: no-repeat;
     width: 50%;
