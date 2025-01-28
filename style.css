@@ -6,9 +6,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Inter", serif;
-    /* transition: all 0.2s ease-in-out; */
+    transition: all 0.4s ease-in-out !important;
 }
-
 
 .mobile{
     display: none;
@@ -59,7 +58,7 @@ ul li:hover{
 .service-box {
     width: 90%;
     cursor: pointer;
-    transition: color 0.3s ease !important;
+    /* transition: color 0.3s ease !important; */
     border-radius: 20px;
     padding: 10px;
     
@@ -99,6 +98,8 @@ ul li:hover{
   .login_form input:focus{
 outline: 1px solid #018630;
   }
+
+  
 
 @media screen and (max-width: 400px) {
     .nav-container {
