@@ -1,10 +1,13 @@
+<?php
+include 'server/login_register.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waste Connect | Trash Pickup Services</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +18,9 @@
         <div class="login_img"></div>
         <div class="flex flex-1 flex-col justify-start items-center">
             <div class="mb-10">
-                <img src="/images/waste-connect-logo2.jpeg" style="height: 70px;" class="h-[50px] w-[50px]" alt="">
+                <img src="./images/waste-connect-logo2.jpeg" style="height: 70px;" class="h-[50px] w-[50px]" alt="">
             </div>
-            <form id="loginForm" class="login_form md:w-2/3 flex gap-4 flex-col">
+            <form method="POST" id="loginForm" class="login_form md:w-2/3 flex gap-4 flex-col">
                 <div>
                     <label for="email" class="block text-gray-700 mb-2">Email</label>
                     <input type="email" id="email" name="email" placeholder="example@gmail.com" class="border pl-4 rounded w-full p-4" />
@@ -29,7 +32,7 @@
                     <input type="password" id="password" name="password" placeholder="e.g. password" class="border pl-4 rounded w-full p-4" />    
                     <p id="passwordError" class="text-red-500 text-sm hidden">Password is required.</p>
                 </div>
-                <button type="submit" class="bg-green-600 w-full mt-4 text-white rounded-lg p-4">Login</button>
+                <button type="submit" name="Login" class="bg-green-600 w-full mt-4 text-white rounded-lg p-4">Login</button>
             </form>  
         </div>
     </main>
