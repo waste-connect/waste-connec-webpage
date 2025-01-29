@@ -38,6 +38,17 @@ ul li:hover{
     border-radius: 10px;
 }
 
+.nav-start {
+    background-color: #018630;
+    color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 500;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .hero{
     height: 100vh;
 }
@@ -145,6 +156,10 @@ outline: 1px solid #018630;
         box-shadow: 2px 1px 1px 1px rgb(211, 210, 210);
         background-color: #fff;
         
+    }
+
+    .start-buttons {
+        display: none;
     }
 
     .navbar {
