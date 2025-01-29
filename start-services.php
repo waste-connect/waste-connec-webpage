@@ -1,5 +1,6 @@
 <?php
     include 'server/login_register.php';
+    // include
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/start-service.css">
-    <script defer src="/script/start.js"></script>
+    <link rel="stylesheet" href="./css/start-service.css">
+    <script defer src="./script/start.js"></script>
     <title>start services</title>
 </head>
 <body>
