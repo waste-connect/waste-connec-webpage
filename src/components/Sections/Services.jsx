@@ -5,9 +5,9 @@ import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
+import AddImage1 from "../../assets/img/add/trash_field.jpeg";
+import AddImage2 from "../../assets/img/add/futuristic-recycle.webp";
+import AddImage3 from "../../assets/img/add/bin.jpg";
 import AddImage4 from "../../assets/img/add/4.png";
 
 export default function Services() {
@@ -31,27 +31,30 @@ export default function Services() {
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                image="src/assets/img/add/garbage-truck.png"
+                title="On-Demand Waste Pickup "
+                subtitle="Schedule a pickup for your trash, and we'll connect you with a local disposal service for hassle-free removal."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                image="src/assets/img/add/recycle-globe.png"
+                title="Eco-Friendly Recycling"
+                subtitle="Partnering with certified recyclers to ensure waste is processed sustainably and efficiently."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                image="src/assets/img/add/company-building.png"
+                title="Bulk & Commercial Disposal "
+                subtitle="Handling large-scale waste for businesses, construction sites, and events with tailored solutions."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox
+               image="src/assets/img/add/warning-icon.png" 
+               title="Hazardous Waste Management"
+               subtitle="Safe and compliant disposal of electronic waste, chemicals, and other hazardous materials." />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -67,7 +70,7 @@ export default function Services() {
                 </p>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
+                    <FullButton title="Start Services" action={() => alert("clicked")} />
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
                     <FullButton title="Contact Us" action={() => alert("clicked")} border />
