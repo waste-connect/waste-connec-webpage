@@ -13,7 +13,7 @@ export default function Header() {
       <LeftSide className="flexCenter">
         <div>
           <h1 className="extraBold font60">We are Digital Agency.</h1>
-          <HeaderP className="font13 semiBold">
+          <HeaderP className="font13 semiBold bg-red-500 ">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
             voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
           </HeaderP>
